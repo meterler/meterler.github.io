@@ -14,15 +14,47 @@
 				<div class="toolbar-title">充值</div>
 				<div class="toolbar-actions"></div>
 			</div>
-			<div class="pg-body" style="overflow: hidden;">
-				<div class="ui-row"><label>充值账户：</label>9999</div>
-				<div class="ui-row"><label>当前余额：</label>￥99.9</div>
-				<div class="ui-row"><input style="position: relative;" class="input" type="text" placeholder="充值金额1"></div>
-				<div class="ui-row" style="position: relative;"><input class="input" type="text" placeholder="充值金额2"></div>
-				<div class="ui-row" style="width: 100%;"><input class="input" type="text" placeholder="充值金额3"></div>
-				<div class="ui-row" style="padding: 1px;"><input class="input" type="text" placeholder="充值金额4"></div>
-				<div class="ui-row"><input style="zoom:1;position: relative;padding-left:0;padding-right:0;text-indent: 12px;" class="input" type="text" placeholder="充值金额5"></div>
+			<div class="pg-body">
+				<div class="ui-row"><label>充值账户：</label>${Session.pay_user_cn!""}</div>
+				<div class="ui-row"><label>当前余额：</label><span class="ui-money-color">￥${(user.money!0)?string("0.00")}</span></div>
+				<div class="ui-row"><input class="input" type="text" placeholder="充值金额"/></div>
 				<div class="ui-hr"></div>
+				<div class="ui-row ui-row-note">充值即时到账，无需手续费</div>
+				<ul class="choice-list">
+					<li class="c-item">
+						<a>
+							<div class="c-content">
+								<i class="icon-alipay"></i>
+								<span>支付宝网页支付</span>
+							</div>
+							<div class="c-arrow">
+								<i class="icon-arrow-right"></i>
+							</div>
+						</a>
+					</li>
+					<li class="c-item">
+						<a>
+							<div class="c-content">
+								<i class="icon-alipay"></i>
+								<span>支付宝客户端支付</span>
+							</div>
+							<div class="c-arrow">
+								<i class="icon-arrow-right"></i>
+							</div>
+						</a>
+					</li>
+					<li class="c-item">
+						<a>
+							<div class="c-content">
+								<i class="icon-unionpay"></i>
+								<span>银联</span>
+							</div>
+							<div class="c-arrow">
+								<i class="icon-arrow-right"></i>
+							</div>
+						</a>
+					</li>
+				</ul>
 			</div>
         </div>
 </body></html>

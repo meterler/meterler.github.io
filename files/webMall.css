@@ -572,12 +572,13 @@ body {
 }
 .input {
   background: #fff;
-  padding: 8px 12px;
+  padding: 8px 0;
   flex: 1;
   border-radius: 2px;
   border: 1px solid #ccc;
   box-sizing: border-box;
   font-size: 18px;
+  text-indent: 12px;
 }
 /*
 .icon_input{

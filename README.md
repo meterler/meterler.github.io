@@ -3,4 +3,6 @@ meterler.github.io
 
 index
 
-![NADBB][img/nadbb2.png]
+hello!
+
+![NADBB][https://raw.githubusercontent.com/meterler/meterler.github.io/master/img/nadbb2.png]
